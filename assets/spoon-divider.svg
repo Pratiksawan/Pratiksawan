@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 120 390" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">There is no spoon</title>
+  <desc id="desc">An original metallic spoon slowly bends between the red and blue paths, with faint falling binary code.</desc>
+  <style>
+    text{font-family:'Fira Code','Courier New',monospace}
+    @keyframes glow{0%,100%{opacity:.35}50%{opacity:.8}}
+    .glow{animation:glow 7s ease-in-out infinite}
+    .still{display:none}
+    @media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}*{animation:none!important}}
+  </style>
+  <defs>
+    <linearGradient id="metal" gradientUnits="userSpaceOnUse" x1="38" y1="0" x2="82" y2="0">
+      <stop stop-color="#17362B"/><stop offset=".35" stop-color="#D9FFE3"/>
+      <stop offset=".55" stop-color="#729B85"/><stop offset=".75" stop-color="#E4FFF0"/><stop offset="1" stop-color="#244D39"/>
+    </linearGradient>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="10" y="80" width="100" height="230"><feGaussianBlur stdDeviation="2"/></filter>
+    <clipPath id="code"><rect x="4" y="45" width="112" height="265"/></clipPath>
+    <g id="digits" fill="#003B00" font-size="10">
+      <text x="8" y="-40">0<tspan x="8" dy="22">1</tspan><tspan x="8" dy="22">0</tspan><tspan x="8" dy="22">1</tspan><tspan x="8" dy="22">1</tspan><tspan x="8" dy="22">0</tspan><tspan x="8" dy="22">1</tspan><tspan x="8" dy="22">0</tspan></text>
+      <text x="103" y="50">1<tspan x="103" dy="22">0</tspan><tspan x="103" dy="22">1</tspan><tspan x="103" dy="22">0</tspan><tspan x="103" dy="22">0</tspan><tspan x="103" dy="22">1</tspan><tspan x="103" dy="22">0</tspan><tspan x="103" dy="22">1</tspan></text>
+    </g>
+  </defs>
+  <rect width="120" height="390" rx="8" fill="#0D1117"/>
+  <path d="M60 23V63M60 310V324" stroke="#003B00" stroke-dasharray="2 6"/>
+  <text x="60" y="32" text-anchor="middle" fill="#00FF41" font-size="10" letter-spacing="2">OR</text>
+  <g class="motion" clip-path="url(#code)">
+    <g><use href="#digits"/><animateTransform attributeName="transform" type="translate" from="0 -80" to="0 190" dur="11s" repeatCount="indefinite"/></g>
+  </g>
+  <path class="glow motion" d="M60 152C60 190 60 225 60 286" fill="none" stroke="#00FF41" stroke-width="18" opacity=".3" filter="url(#glow)">
+    <animate attributeName="d" values="M60 152C60 190 60 225 60 286;M60 152C94 190 25 225 60 286;M60 152C60 190 60 225 60 286" dur="9s" repeatCount="indefinite"/>
+  </path>
+  <path class="glow still" d="M60 152C94 190 25 225 60 286" fill="none" stroke="#00FF41" stroke-width="18" opacity=".3" filter="url(#glow)"/>
+  <path class="motion" d="M60 152C60 190 60 225 60 286" fill="none" stroke="url(#metal)" stroke-width="13" stroke-linecap="round">
+    <animate attributeName="d" values="M60 152C60 190 60 225 60 286;M60 152C94 190 25 225 60 286;M60 152C60 190 60 225 60 286" dur="9s" repeatCount="indefinite"/>
+  </path>
+  <path class="still" d="M60 152C94 190 25 225 60 286" fill="none" stroke="url(#metal)" stroke-width="13" stroke-linecap="round"/>
+  <ellipse cx="60" cy="126" rx="22" ry="31" fill="url(#metal)" stroke="#A3DDB2" stroke-width=".7"/>
+  <ellipse cx="60" cy="124" rx="15" ry="23" fill="#17362B" opacity=".45"/>
+  <path d="M50 107C44 121 47 134 53 142" fill="none" stroke="#E4FFF0" opacity=".75" stroke-width="2" stroke-linecap="round"/>
+  <text x="60" y="347" text-anchor="middle" fill="#00FF41" font-size="9" letter-spacing="1">THERE IS</text>
+  <text x="60" y="364" text-anchor="middle" fill="#00FF41" font-size="9" letter-spacing="1">NO SPOON</text>
+</svg>

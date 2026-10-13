@@ -16,11 +16,25 @@
 
 ## / choose your path
 
-<div align="center">
-<img src="assets/pills.svg" width="100%" alt="Red pill: become a developer. Blue pill: stay in the Matrix." />
+<table>
+  <tr>
+    <td width="44%" align="center">
+      <a href="docs/selected-work.md" title="Explore my project case studies">
+        <img src="assets/red-pill.svg" width="100%" alt="Execute red_pill.sh — explore my work" />
+      </a>
+    </td>
+    <td width="12%" align="center">
+      <img src="assets/spoon-divider.svg" width="100%" alt="There is no spoon — an animated bending spoon" />
+    </td>
+    <td width="44%" align="center">
+      <a href="https://github.com/Pratiksawan?tab=repositories" title="Browse my public repositories">
+        <img src="assets/blue-pill.svg" width="100%" alt="Execute blue_pill.sh — browse public repositories" />
+      </a>
+    </td>
+  </tr>
+</table>
 
-[Explore my work](docs/selected-work.md) · [Browse public repositories](https://github.com/Pratiksawan?tab=repositories)
-</div>
+> You take the blue pill—the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill—you stay in Wonderland, and I show you how deep the rabbit hole goes.
 
 ## / operator
 

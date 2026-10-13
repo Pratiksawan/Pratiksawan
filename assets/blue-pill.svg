@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 420 390" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">BLUE pill — execute blue_pill.sh</title>
+  <desc id="desc">A floating blue capsule with neon aura, digital particles and slow glitch accents. The terminal command is a navigation link when wrapped by an HTML anchor in the README.</desc>
+  <style>
+    text{font-family:'Fira Code','Courier New',monospace}
+    @keyframes float{0%,100%{transform:translateY(0) rotate(-2deg) scaleX(1)}50%{transform:translateY(-7px) rotate(2deg) scaleX(.96)}}
+    @keyframes aura{0%,100%{opacity:.3}50%{opacity:.65}}
+    @keyframes dust{0%,100%{transform:translateY(7px);opacity:.15}50%{transform:translateY(-9px);opacity:.65}}
+    @keyframes glitch{0%,74%,84%,100%{opacity:0;transform:translateX(0)}77%,81%{opacity:.42;transform:translateX(3px)}}
+    @keyframes blink{0%,48%{opacity:1}52%,100%{opacity:0}}
+    .float{transform-box:fill-box;transform-origin:center;animation:float 7s ease-in-out infinite}
+    .aura{animation:aura 6.8s ease-in-out infinite}
+    .dust{animation:dust 6s ease-in-out infinite}
+    .glitch{animation:glitch 12s ease-in-out infinite}
+    .cursor{animation:blink 1.6s steps(1,end) infinite}
+    .surface{transition:fill .35s ease}
+    .core{transition:filter .35s ease}
+    svg:hover .surface{fill:#141D28}
+    svg:hover .edge{stroke:#2A6BFF}
+    svg:hover .aura{animation:none;opacity:.95}
+    svg:hover .core{filter:brightness(1.2)}
+    @media(prefers-reduced-motion:reduce){.motion{display:none}*{animation:none!important}}
+  </style>
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#B8D3FF"/><stop offset=".3" stop-color="#2A6BFF"/>
+      <stop offset=".7" stop-color="#174DDB"/><stop offset="1" stop-color="#081C62"/>
+    </linearGradient>
+    <filter id="aura" x="-80%" y="-120%" width="260%" height="340%"><feGaussianBlur stdDeviation="12"/></filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#00FF41" opacity=".035"/></pattern>
+  </defs>
+  <rect class="surface edge" x="1" y="1" width="418" height="388" rx="10" fill="#0D1117" stroke="#003B00"/>
+  <rect width="420" height="390" fill="url(#scan)" pointer-events="none"/>
+  <path d="M20 41V20H66M354 20H400V41M20 349V370H66M354 370H400V349" fill="none" stroke="#2A6BFF" opacity=".7"/>
+  <text x="24" y="43" fill="#84A78E" font-size="10" letter-spacing="2">PATH / 02</text>
+  <text x="396" y="43" text-anchor="end" fill="#2A6BFF" font-size="10" letter-spacing="2">BLUE SIGNAL</text>
+  <g class="motion" fill="#2A6BFF">
+    <rect class="dust" x="54" y="126" width="3" height="3" opacity=".3" style="animation-delay:-0s"/>
+    <rect class="dust" x="91" y="82" width="2" height="2" opacity=".3" style="animation-delay:-0.65s"/>
+    <rect class="dust" x="334" y="105" width="3" height="3" opacity=".3" style="animation-delay:-1.3s"/>
+    <rect class="dust" x="368" y="178" width="2" height="2" opacity=".3" style="animation-delay:-1.9500000000000002s"/>
+    <rect class="dust" x="78" y="213" width="3" height="3" opacity=".3" style="animation-delay:-2.6s"/>
+    <rect class="dust" x="312" y="219" width="2" height="2" opacity=".3" style="animation-delay:-3.25s"/>
+    <rect class="dust" x="170" y="71" width="2" height="2" opacity=".3" style="animation-delay:-3.9000000000000004s"/>
+    <rect class="dust" x="259" y="91" width="2" height="2" opacity=".3" style="animation-delay:-4.55s"/>
+    <rect class="dust" x="48" y="175" width="2" height="2" opacity=".3" style="animation-delay:-5.2s"/>
+    <rect class="dust" x="350" y="71" width="2" height="2" opacity=".3" style="animation-delay:-5.8500000000000005s"/>
+  </g>
+  <ellipse cx="210" cy="213" rx="77" ry="9" fill="#2A6BFF" opacity=".1" filter="url(#aura)"/>
+  <g transform="translate(210 155) rotate(20)">
+    <g class="float">
+      <rect class="aura" x="-96" y="-30" width="192" height="60" rx="30" fill="#2A6BFF" opacity=".5" filter="url(#aura)"/>
+      <g class="core">
+        <rect x="-82" y="-25" width="164" height="50" rx="25" fill="url(#shell)" stroke="#2A6BFF"/>
+        <path d="M0 -24V24" stroke="#081C62" opacity=".8"/>
+        <path d="M-59 -13H-12" stroke="#B8D3FF" stroke-width="4" opacity=".75" stroke-linecap="round"/>
+        <path d="M12 15H55" stroke="#081C62" stroke-width="2" opacity=".65" stroke-linecap="round"/>
+      </g>
+      <rect class="glitch motion" x="-82" y="-25" width="164" height="50" rx="25" fill="none" stroke="#FF00FF" stroke-width="2" opacity="0"/>
+    </g>
+  </g>
+  <text x="210" y="266" text-anchor="middle" fill="#B8D3FF" font-size="19" font-weight="bold" letter-spacing="1">TAKE THE BLUE PILL</text>
+  <text class="glitch motion" x="210" y="266" text-anchor="middle" fill="#2A6BFF" font-size="19" font-weight="bold" letter-spacing="1" opacity="0">TAKE THE BLUE PILL</text>
+  <text x="210" y="291" text-anchor="middle" fill="#A3DDB2" font-size="13">Stay in the Matrix.</text>
+  <rect x="18" y="315" width="384" height="45" rx="5" fill="#000000" stroke="#003B00"/>
+  <text x="24" y="343" fill="#00FF41" font-size="15">&gt; execute blue_pill.sh</text>
+  <text class="cursor" x="229" y="343" fill="#00FF41" font-size="15">_</text>
+  <text x="396" y="380" text-anchor="end" fill="#84A78E" font-size="9">SELECT TO BROWSE REPOSITORIES</text>
+</svg>
