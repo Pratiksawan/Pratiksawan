@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 960 236" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="title desc">
+<title id="title">Pratik Sawant — Resurrections</title>
+<desc id="desc">Original cinematic profile title, gentle RGB split effects, a terminal cursor and a Resurrections reveal.</desc>
+<style>text{font-family:'Fira Code','Courier New',monospace} .still{display:none} @media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}*{animation:none!important}}@keyframes cyanSplit{0%,32%,38%,76%,82%,100%{opacity:0;transform:translate(0,0)}34%,36%{opacity:.6;transform:translate(-4px,1px)}78%,80%{opacity:.4;transform:translate(3px,0)}}@keyframes magentaSplit{0%,32%,38%,76%,82%,100%{opacity:0;transform:translate(0,0)}34%,36%{opacity:.5;transform:translate(4px,-1px)}78%,80%{opacity:.4;transform:translate(-3px,0)}}@keyframes reveal{0%,35%{opacity:0}48%,91%{opacity:1}100%{opacity:0}}@keyframes cursor{0%,48%{opacity:1}52%,100%{opacity:0}}.cyan{animation:cyanSplit 14s ease-in-out infinite}.magenta{animation:magentaSplit 14s ease-in-out infinite}.reveal{animation:reveal 14s ease-in-out infinite}.cursor{animation:cursor 1.6s steps(1,end) infinite}</style>
+<defs>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft-glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="8"/></filter>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="1" seed="11"/><feColorMatrix type="saturate" values="0"/></filter>
+  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#00FF41" opacity=".12"/></pattern>
+  <radialGradient id="vignette"><stop offset="0" stop-color="#000000" stop-opacity="0"/><stop offset=".65" stop-color="#000000" stop-opacity=".1"/><stop offset="1" stop-color="#000000" stop-opacity=".9"/></radialGradient>
+</defs>
+<defs>
+<clipPath id="cyan-band"><rect x="0" y="80" width="960" height="15"/></clipPath><clipPath id="magenta-band"><rect x="0" y="102" width="960" height="13"/></clipPath>
+<filter id="distortion"><feTurbulence type="fractalNoise" baseFrequency=".006 .09" numOctaves="1" seed="4" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+<rect width="960" height="236" rx="8" fill="#000000"/><path d="M30 38V18H92M868 18H930V38M30 198V218H92M868 218H930V198" fill="none" stroke="#003B00" stroke-width="2"/>
+<text x="42" y="36" fill="#00FF41" font-size="10" letter-spacing="2">IDENTITY // PRATIKSAWAN</text><text x="918" y="36" text-anchor="end" fill="#00FF41" font-size="10">GITHUB / ENGINEERING</text>
+<text x="480" y="113" text-anchor="middle" fill="#D9FFE3" font-size="64" font-weight="bold" letter-spacing="-2" filter="url(#glow)">PRATIK SAWANT</text>
+<g class="motion"><g clip-path="url(#cyan-band)"><text class="cyan" x="480" y="113" text-anchor="middle" fill="#00FFFF" font-size="64" font-weight="bold" letter-spacing="-2" opacity="0" filter="url(#distortion)">PRATIK SAWANT</text></g><g clip-path="url(#magenta-band)"><text class="magenta" x="480" y="113" text-anchor="middle" fill="#FF00FF" font-size="64" font-weight="bold" letter-spacing="-2" opacity="0" filter="url(#distortion)">PRATIK SAWANT</text></g></g>
+<rect class="cursor" x="718" y="108" width="21" height="4" fill="#00FF41"/>
+<text x="480" y="141" text-anchor="middle" fill="#00FF41" font-size="14" letter-spacing="2">AI &amp; FULL STACK ENGINEER</text>
+<path d="M230 177H308M652 177H730" stroke="#003B00"/>
+<text class="reveal" x="480" y="185" text-anchor="middle" fill="#00FF41" font-size="19" letter-spacing="6" filter="url(#glow)">RESURRECTIONS</text>
+<text x="480" y="210" text-anchor="middle" fill="#8FAE97" font-size="12">Wake up... The Matrix has you.</text>
+<rect width="960" height="236" fill="url(#scanlines)" opacity=".45" pointer-events="none"/><rect width="960" height="236" filter="url(#grain)" opacity=".025" pointer-events="none"/>
+</svg>

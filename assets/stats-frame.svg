@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 960 106" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="title desc">
+<title id="title">GitHub telemetry HUD</title>
+<desc id="desc">Neon frame heading for the GitHub statistics, streak and language cards below. It contains no invented statistics.</desc>
+<style>text{font-family:'Fira Code','Courier New',monospace} .still{display:none} @media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}*{animation:none!important}}@keyframes brackets{0%,100%{opacity:.5}50%{opacity:1}}.corners{animation:brackets 7s ease-in-out infinite}</style>
+<defs>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft-glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="8"/></filter>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="1" seed="11"/><feColorMatrix type="saturate" values="0"/></filter>
+  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#00FF41" opacity=".12"/></pattern>
+  <radialGradient id="vignette"><stop offset="0" stop-color="#000000" stop-opacity="0"/><stop offset=".65" stop-color="#000000" stop-opacity=".1"/><stop offset="1" stop-color="#000000" stop-opacity=".9"/></radialGradient>
+</defs>
+<rect width="960" height="106" rx="8" fill="#000000"/><rect x="15" y="12" width="930" height="81" fill="none" stroke="#003B00"/><path class="corners" d="M15 32V12H65M895 12H945V32M15 73V93H65M895 93H945V73" fill="none" stroke="#00FF41" stroke-width="2"/>
+<text x="40" y="40" fill="#00FF41" font-size="10" letter-spacing="2">GITHUB TELEMETRY // PRATIKSAWAN</text><text x="40" y="70" fill="#D9FFE3" font-size="21" letter-spacing="3">ACTIVITY / REPOSITORIES / LANGUAGES</text><text x="918" y="42" text-anchor="end" fill="#8FAE97" font-size="10">SOURCE: PUBLIC GITHUB DATA</text><text x="918" y="70" text-anchor="end" fill="#00FF41" font-size="10">LIVE CARDS BELOW</text><rect width="960" height="106" fill="url(#scanlines)" opacity=".45" pointer-events="none"/><rect width="960" height="106" filter="url(#grain)" opacity=".025" pointer-events="none"/>
+</svg>
