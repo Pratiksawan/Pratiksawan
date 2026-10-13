@@ -1,4 +1,8 @@
-# Pratik Sawant
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile-light.svg" />
+  <img src="assets/profile-light.svg" alt="Pratik Sawant — AI and Full Stack Engineer; backend services, AI integrations and web applications" width="960" />
+</picture>
 
 **AI & Full Stack Engineer** · Navi Mumbai, India
 
@@ -40,3 +44,16 @@ A Next.js portfolio presenting my work through project case studies and interact
 ## Engineering interests
 
 Validation and fallback handling around AI outputs, reliable API integrations, and data isolation in multi-tenant systems.
+
+<details>
+<summary>Contribution activity</summary>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Pratiksawan/Pratiksawan/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Pratiksawan/Pratiksawan/output/github-snake.svg" />
+  <img src="https://raw.githubusercontent.com/Pratiksawan/Pratiksawan/output/github-snake.svg" alt="Animated contribution graph for Pratiksawan" width="850" />
+</picture>
+
+[View activity on GitHub](https://github.com/Pratiksawan?tab=overview)
+
+</details>
