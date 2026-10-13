@@ -62,44 +62,48 @@ MotoDock and chatbot links are case studies. Their complete application source i
 
 ## / telemetry
 
-<details>
-<summary>Open GitHub stats, streak and language cards</summary>
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/telemetry-frame.svg" width="100%" alt="Animated GitHub telemetry HUD with a decorative radar sweep." />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://github-readme-stats.vercel.app/api?username=Pratiksawan&amp;show_icons=true&amp;hide_border=false&amp;border_color=003B00&amp;bg_color=0D1117&amp;title_color=00FF41&amp;icon_color=00FF41&amp;text_color=A3DDB2&amp;disable_animations=true" width="100%" alt="Pratiksawan's real GitHub statistics" />
+    </td>
+    <td width="50%" align="center">
+      <img src="https://streak-stats.demolab.com?user=Pratiksawan&amp;hide_border=false&amp;border=003B00&amp;stroke=003B00&amp;background=0D1117&amp;ring=00FF41&amp;fire=00FF41&amp;currStreakLabel=00FF41&amp;sideLabels=A3DDB2&amp;dates=84A78E&amp;currStreakNum=D9FFE3&amp;sideNums=D9FFE3" width="100%" alt="Pratiksawan's real GitHub contribution streak" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pratiksawan&amp;layout=compact&amp;hide_border=false&amp;border_color=003B00&amp;bg_color=0D1117&amp;title_color=00FF41&amp;text_color=A3DDB2" width="48%" alt="Languages in Pratiksawan's indexed public repositories" />
+    </td>
+  </tr>
+</table>
 
-<div align="center">
+[View actual GitHub activity](https://github.com/Pratiksawan?tab=overview) · [Browse public repositories](https://github.com/Pratiksawan?tab=repositories)
 
-<img src="assets/stats-frame.svg" width="100%" alt="Neon HUD heading for GitHub telemetry cards." />
-
-<img src="https://github-readme-stats.vercel.app/api?username=Pratiksawan&amp;show_icons=true&amp;hide_border=true&amp;bg_color=000000&amp;title_color=00FF41&amp;icon_color=00FF41&amp;text_color=A3DDB2&amp;disable_animations=true" width="48%" alt="Pratiksawan GitHub statistics" />
-<img src="https://streak-stats.demolab.com?user=Pratiksawan&amp;hide_border=true&amp;background=000000&amp;ring=00FF41&amp;fire=00FF41&amp;currStreakLabel=00FF41&amp;sideLabels=A3DDB2&amp;dates=8FAE97&amp;currStreakNum=D9FFE3&amp;sideNums=D9FFE3" width="48%" alt="Pratiksawan GitHub contribution streak" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pratiksawan&amp;layout=compact&amp;hide_border=true&amp;bg_color=000000&amp;title_color=00FF41&amp;text_color=A3DDB2" width="48%" alt="Languages represented in Pratiksawan's public repositories" />
-
-</div>
-
-If a free card service is unavailable or rate-limited, use [GitHub activity](https://github.com/Pratiksawan?tab=overview) and [public repositories](https://github.com/Pratiksawan?tab=repositories). Language cards describe indexed public code, not proficiency.
-
-</details>
+<sub>Stats cards use public GitHub data. If a free card service is unavailable, use the links above. Language proportions describe indexed code.</sub>
 
 ## / contribution stream
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Pratiksawan/Pratiksawan/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Pratiksawan/Pratiksawan/output/github-snake.svg" />
-  <img src="https://raw.githubusercontent.com/Pratiksawan/Pratiksawan/output/github-snake-dark.svg" width="100%" alt="Animated snake traversing Pratiksawan's contribution graph." />
-</picture>
+<img src="assets/contribution-rain.svg" width="100%" alt="Decorative Matrix-style digital rain with an animated cursor and simulated System Online indicator." />
+
+[Actual contribution history](https://github.com/Pratiksawan?tab=overview)
 
 </div>
 
----
+```text
+pratiksawan@matrix:~$ echo "There is no spoon."
+There is no spoon.
+```
 
 <div align="center">
 
-`There is no spoon.`
-
 [LinkedIn](https://www.linkedin.com/in/pratik-sawant-b82782214) · [Email](mailto:pratiksawant542@gmail.com) · [GitHub](https://github.com/Pratiksawan)
-
-<sub>Original cinematic SVGs. No JavaScript, movie images, logos or characters.</sub>
 
 </div>

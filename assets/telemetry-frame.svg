@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 960 170" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub telemetry — Pratiksawan</title>
+  <desc id="desc">Animated diagnostic HUD heading for real GitHub statistics, streak and language cards. Radar animation is decorative.</desc>
+  <style>
+    text{font-family:'Fira Code','Courier New',monospace}
+    @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+    @keyframes blink{0%,48%{opacity:1}52%,100%{opacity:0}}
+    .pulse{animation:pulse 5s ease-in-out infinite}
+    .cursor{animation:blink 1.6s steps(1,end) infinite}
+    @media(prefers-reduced-motion:reduce){.motion{display:none}*{animation:none!important}}
+  </style>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#00FF41" opacity=".035"/>
+    </pattern>
+    <radialGradient id="radar-fill">
+      <stop stop-color="#00FF41" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#00FF41" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="radar-clip"><circle cx="824" cy="84" r="51"/></clipPath>
+  </defs>
+  <rect x="1" y="1" width="958" height="168" rx="8" fill="#0D1117" stroke="#003B00"/>
+  <rect width="960" height="170" fill="url(#scan)"/>
+  <path class="pulse" d="M18 43V18H82M878 18H942V43M18 127V152H82M878 152H942V127" fill="none" stroke="#00FF41" stroke-width="2" filter="url(#glow)"/>
+  <text x="40" y="42" fill="#00FF41" font-size="12" letter-spacing="2">// TELEMETRY</text>
+  <rect class="cursor" x="169" y="34" width="7" height="10" fill="#00FF41"/>
+  <text x="40" y="81" fill="#D9FFE3" font-size="28" font-weight="bold" letter-spacing="1">SYSTEM DIAGNOSTICS</text>
+  <text x="40" y="108" fill="#84A78E" font-size="12">PROFILE: PRATIKSAWAN / SOURCE: PUBLIC GITHUB DATA</text>
+  <text x="40" y="138" fill="#00FF41" font-size="11" letter-spacing="2">01 ACTIVITY · 02 STREAK · 03 LANGUAGES</text>
+  <g fill="none" stroke="#003B00">
+    <circle cx="824" cy="84" r="51"/><circle cx="824" cy="84" r="34"/><circle cx="824" cy="84" r="17"/>
+    <path d="M773 84H875M824 33V135"/>
+  </g>
+  <g class="motion" clip-path="url(#radar-clip)">
+    <g>
+      <path d="M824 84L824 33A51 51 0 0 1 875 84Z" fill="url(#radar-fill)"/>
+      <path d="M824 84V33" stroke="#00FF41" stroke-width="1.5" filter="url(#glow)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 824 84" to="360 824 84" dur="9s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <circle class="pulse" cx="843" cy="62" r="2.5" fill="#00FF41" filter="url(#glow)"/>
+  <circle class="pulse" cx="803" cy="102" r="2" fill="#00FF41"/>
+  <text x="824" y="151" text-anchor="middle" fill="#84A78E" font-size="9" letter-spacing="1">DECORATIVE RADAR</text>
+</svg>
