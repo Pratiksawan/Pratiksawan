@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 60 390" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Choose a path — digital code divider</title>
+  <desc id="desc">Three thin streams of falling binary and hexadecimal characters around a small OR marker. Original decorative Matrix-style animation.</desc>
+  <style>
+    text{font-family:'Fira Code','Courier New',monospace}
+    @keyframes pulse{0%,100%{opacity:.4}50%{opacity:.8}}
+    .pulse{animation:pulse 6s ease-in-out infinite}
+    .still{display:none}
+    @media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}*{animation:none!important}}
+  </style>
+  <defs>
+    <filter id="glow" x="-50%" y="-25%" width="200%" height="150%">
+      <feGaussianBlur stdDeviation=".7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="code-grid" width="20" height="40" patternUnits="userSpaceOnUse">
+      <text x="5" y="14" fill="#004C18" font-size="9">0</text><text x="5" y="34" fill="#006420" font-size="9">1</text>
+    </pattern>
+    <clipPath id="code-window"><rect x="2" y="28" width="56" height="334"/></clipPath>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#000000"/><stop offset=".15" stop-color="#FFFFFF"/>
+      <stop offset=".85" stop-color="#FFFFFF"/><stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+    <mask id="edge-fade"><rect width="60" height="390" fill="url(#fade)"/></mask>
+    <g id="digits" font-size="10">
+      <text x="0" y="-140" fill="#003B00">0<tspan x="0" dy="22">1</tspan><tspan x="0" dy="22">F</tspan><tspan x="0" dy="22">0</tspan><tspan x="0" dy="22">A</tspan><tspan x="0" dy="22">1</tspan><tspan x="0" dy="22" fill="#008F2A">0</tspan><tspan x="0" dy="22" fill="#00FF41">F</tspan><tspan x="0" dy="22" fill="#B9FFD0">1</tspan></text>
+    </g>
+  </defs>
+  <rect width="60" height="390" rx="6" fill="#0D1117"/>
+  <rect x="4" y="28" width="52" height="334" fill="url(#code-grid)" mask="url(#edge-fade)" opacity=".8"/>
+  <g class="motion" mask="url(#edge-fade)" clip-path="url(#code-window)" filter="url(#glow)">
+    <g transform="translate(7 0)"><g><use href="#digits"/><animateTransform attributeName="transform" type="translate" from="0 -60" to="0 390" dur="12s" begin="-4s" repeatCount="indefinite"/></g></g>
+    <g transform="translate(27 40)"><g><use href="#digits"/><animateTransform attributeName="transform" type="translate" from="0 -90" to="0 390" dur="9s" begin="-6s" repeatCount="indefinite"/></g></g>
+    <g transform="translate(47 0)"><g><use href="#digits"/><animateTransform attributeName="transform" type="translate" from="0 -60" to="0 390" dur="14s" begin="-9s" repeatCount="indefinite"/></g></g>
+  </g>
+  <g class="still" fill="#008F2A" font-size="10">
+    <text x="8" y="90">0<tspan x="8" dy="32">1</tspan><tspan x="8" dy="32">F</tspan></text>
+    <text x="45" y="250">A<tspan x="45" dy="32">0</tspan><tspan x="45" dy="32">1</tspan></text>
+  </g>
+  <rect x="8" y="173" width="44" height="44" rx="8" fill="#0D1117"/>
+  <path class="pulse" d="M17 185V180H22M38 180H43V185M17 205V210H22M38 210H43V205" fill="none" stroke="#00FF41" stroke-width=".8"/>
+  <text x="30" y="199" text-anchor="middle" fill="#A3DDB2" font-size="11" letter-spacing="1">OR</text>
+</svg>

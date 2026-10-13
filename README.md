@@ -18,15 +18,15 @@
 
 <table>
   <tr>
-    <td width="44%" align="center">
+    <td width="46%" align="center">
       <a href="docs/selected-work.md" title="Explore my project case studies">
         <img src="assets/red-pill.svg" width="100%" alt="Execute red_pill.sh — explore my work" />
       </a>
     </td>
-    <td width="12%" align="center">
-      <img src="assets/spoon-divider.svg" width="100%" alt="There is no spoon — an animated bending spoon" />
+    <td width="8%" align="center">
+      <img src="assets/path-divider.svg" width="100%" alt="Animated digital code divider — choose a path" />
     </td>
-    <td width="44%" align="center">
+    <td width="46%" align="center">
       <a href="https://github.com/Pratiksawan?tab=repositories" title="Browse my public repositories">
         <img src="assets/blue-pill.svg" width="100%" alt="Execute blue_pill.sh — browse public repositories" />
       </a>
